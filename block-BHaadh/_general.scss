@@ -1,0 +1,28 @@
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+.grid{
+    display: grid;
+}
+
+
+h1{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+body{
+    background-color: aliceblue;
+}
