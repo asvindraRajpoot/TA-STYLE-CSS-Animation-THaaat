@@ -1,0 +1,52 @@
+.BoxContainer{
+
+    border: 3px solid black;
+    grid-template-columns: 200px;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: honeydew;
+  
+   
+
+    
+}
+.box{
+    background-color: green;
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s;  
+    margin-top: 1rem;
+    
+    &:hover{
+      animation-name: MyAnimation;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0ms;
+      animation-iteration-count: 5;
+      animation-fill-mode: forwards;
+     
+              
+    }
+  
+   
+}
+
+@keyframes MyAnimation{
+
+    0%{
+        background-color: goldenrod;
+        transform: perspective(200px) translateZ(100px);
+      
+    }
+    50%{
+        background-color: green;
+        transform: perspective(200px) translateZ(-200px);
+    }
+    100%{
+        background-color: black;
+        transform:  perspective(200px) translateZ(400px);
+       
+    }
+}
